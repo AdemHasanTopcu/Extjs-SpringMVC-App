@@ -26,7 +26,7 @@ public class UserService {
     public ResponseEntity<User> updateUser(User user){
         user.setEmail(user.getEmail());
         user.setFirstName(user.getFirstName());
-        user.setLastName(user.getFirstName());
+        user.setLastName(user.getLastName());
         user.setCreateDate(new Date());
         return ResponseEntity.ok(this.userRepository.save(user));
     }
